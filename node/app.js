@@ -32,24 +32,24 @@ app.use(express.static('public'));
 
 // App Secret can be retrieved from the App Dashboard
 const APP_SECRET = (process.env.MESSENGER_APP_SECRET) ? 
-  process.env.MESSENGER_APP_SECRET :
-  config.get('appSecret');
+  process.env.MESSENGER_APP_SECRET : '60e88d5774ffef92eca66056415f8956';
+  //config.get('appSecret');
 
 // Arbitrary value used to validate a webhook
 const VALIDATION_TOKEN = (process.env.MESSENGER_VALIDATION_TOKEN) ?
-  (process.env.MESSENGER_VALIDATION_TOKEN) :
-  config.get('validationToken');
+  (process.env.MESSENGER_VALIDATION_TOKEN) : 'my-voice-is-my-password-check-it';
+  //config.get('validationToken');
 
 // Generate a page access token for your page from the App Dashboard
 const PAGE_ACCESS_TOKEN = (process.env.MESSENGER_PAGE_ACCESS_TOKEN) ?
-  (process.env.MESSENGER_PAGE_ACCESS_TOKEN) :
-  config.get('pageAccessToken');
+  (process.env.MESSENGER_PAGE_ACCESS_TOKEN) : 'EAAZAQm5lPU0kBAIdg6RpSjyQIYOZClPmyRaZBTEMl8Na6QYDZAyrM9buYLl2eFdoc3ZBwpFCplLZAvzVZBf4CWtSnbrh2rrG75WsTP9KPUs5x1ZBXi8LFcCTDxj8jhe9cbyBDXf3qaERgALM09KZADq8uO8bzWpZAZC5z5NRONh4boGWwZDZD';
+  //config.get('pageAccessToken'); // 
 
 // URL where the app is running (include protocol). Used to point to scripts and 
 // assets located at this address. 
 const SERVER_URL = (process.env.SERVER_URL) ?
-  (process.env.SERVER_URL) :
-  config.get('serverURL');
+  (process.env.SERVER_URL) : 'https://...'
+  //config.get('serverURL');
 
 if (!(APP_SECRET && VALIDATION_TOKEN && PAGE_ACCESS_TOKEN && SERVER_URL)) {
   console.error("Missing config values");
