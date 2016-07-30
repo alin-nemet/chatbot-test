@@ -1,6 +1,6 @@
 {
-    "appSecret": "",
-    "pageAccessToken": "",
-    "validationToken": "",
+    "appSecret": "60e88d5774ffef92eca66056415f8956",
+    "pageAccessToken": "EAAZAQm5lPU0kBAIdg6RpSjyQIYOZClPmyRaZBTEMl8Na6QYDZAyrM9buYLl2eFdoc3ZBwpFCplLZAvzVZBf4CWtSnbrh2rrG75WsTP9KPUs5x1ZBXi8LFcCTDxj8jhe9cbyBDXf3qaERgALM09KZADq8uO8bzWpZAZC5z5NRONh4boGWwZDZD",
+    "validationToken": "my-voice-is-my-password-check-it",
     "serverURL": ""
 }
